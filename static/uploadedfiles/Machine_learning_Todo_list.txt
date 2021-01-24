@@ -1,0 +1,136 @@
+Section: 1
+Introduction
+1. Introduction
+2. Overview of Contents
+3. The Bigger Picture
+4. The Problem Landscape
+5. Defining Data Science
+6. Demystifying AI-ML-Data Science
+7. Exploring the Data Scientist's Toolbox
+
+Section: 2
+Introduction to Data Scientist's Toolbox
+8. Introduction to Data Scientist
+9. Overview of Contents
+10. Quick recap of Python
+11. Python 2.7 vs Python 3.5
+12. Installation & Setup
+13. Datatypes Overview
+14. Spyder tour
+15. Datatypes demo
+16. Datatypes- Numpy
+16.1: Intro to numpy
+16.2: Creating arrays
+16.3: Using arrays and scalars
+16.4: Indexing Arrays
+16.5: Array Transposition
+16.6: Universal Array Function
+16.7: Array Processing
+16.8: Array Input and Output
+
+17. Datatypes-Pandas
+17.1: Series
+17.2: DataFrames
+17.3: Index objects
+17.4: Reindex
+17.5: Drop Entry
+17.6: Selecting Entries
+17.7: Data Alignment
+17.8: Rank and Sort
+17.9: Summary Statistics
+17.10: Missing Data
+17.11: Index Hierarchy
+
+18. Data Engineering
+18.1: Reading and Writing Text Files
+18.2: JSON with Python
+18.3: HTML with Python
+18.4: pip install beautifulsoup4
+18.5: pip install lxml
+18.6: Microsoft Excel files with Python
+
+19. Data Engineering 2
+19.1: Merge
+19.2: Merge on Index
+19.3: Concatenate
+19.4: Combining DataFrames
+19.5: Reshaping
+19.6: Pivoting
+19.7: Duplicates in DataFrames
+19.8: Mapping
+19.9: Replace
+19.10: Rename Index
+19.11: Binning
+19.12: Outliers
+19.13: Permutation
+
+20. Data Engineering 3
+20.1: GroupBy on DataFrames
+20.2: GroupBy on Dict and Series
+20.3: Aggregation
+20.4: Splitting Applying and Combining
+20.5: Cross Tabulation
+
+21. Functions
+22. Data Visualization
+22.1: Installing Seaborn
+22.2: Histograms
+22.3: Kernel Density Estimate Plots
+22.4: Combining Plot Styles
+22.5: Box and Violin Plots
+22.6: Regression Plots
+22.7: Heatmaps and Clustered Matrices
+
+Section: 3
+Exploratory Data Analysis, Feature Engineering and Hypothesis Testing
+23. Introduction to Exploratory Data Analysis
+24. Overview of Contents
+25. Machine Learning Methodology
+26. Exploratory Data Analysis
+27. Univariate Analysis
+28. Univariate Analysis 2
+29. Bivariate Analysis
+30. Feature Engineering
+31. Introduction to Statistics
+32. Probability Distributions
+
+Section: 4
+Machine Learning
+33. Introduction to Machine Learning
+34. Overview of Contents
+35. Introduction to Machine Learning
+36. Supervised Learning
+37. Simple & Multiple Linear Regression
+38. Regression Demo
+39. Classification - Logistic Regression
+40. Classification Logistic Regression Demo
+41. Decision Trees
+42. Decision Trees Demo
+43. Unsupervised Learning - Clustering
+44. Unsupervised Learning Clustering Demo
+45. Unsupervised Learning -Association Rules
+46. Model Evaluation - Regression
+47. Model Evaluation - Regression Demo
+48. Model Evaluation - Classification
+49. Model Evaluation - Classification Demo
+50. Regularization & Hyperparameter tuning
+51. Bias Variance Tradeoff
+52. Cross Validation
+53. Hyperparameter Tuning
+54. Cross Validation , Hyperparameter Demo
+55. Ensemble Modeling
+56. Random Forest [Bagging]
+57. XGBoost [Boosting]
+58. RF & XGB Demo
+
+Section: 5
+Capstone Project
+59. Project Overview
+60. Overview of Contents
+61. Project Use Case Overview
+62. Defining the Problem Statement
+63. Business Solution Blueprint
+64. Explore & Define a ML use case
+65. EDA and Feature Engineering
+66. Approach for Model Development, Evaluation, Optimization
+67. Storyboarding

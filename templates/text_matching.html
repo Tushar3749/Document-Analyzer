@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Document Analyzer</title>
+  
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> -->
+     
+     <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <!-- Material Design Bootstrap -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css" rel="stylesheet">
+</head>
+
+<!-- Navbar start -->
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">AI Document Analyzer</a>
+    </div>
+    <ul class="nav navbar-nav">
+    
+          <li><a href="{{url_for('index')}}">Home</a></li>
+           <li><a href="{{url_for('compare_summary')}}">Compare Summarizers</a></li>
+           <li><a href="{{url_for('text_matching')}}">Text Matcher</a></li>
+           <li><a href="{{url_for('spam')}}">Spam Detector</a></li>
+           <li><a href="{{url_for('redactor')}}">Document Redactor</a></li>
+           <li><a href="#aboutapp">About</a></li> 
+
+    </ul>
+    <form class="navbar-form navbar-left" action="/">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</nav>
+
+<!-- navbar end -->
+  <!--Slider start -->
+
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="https://thumbs.dreamstime.com/z/flat-lay-modern-summer-travel-mock-up-background-office-supplies-white-wooden-planks-laptop-alarm-clock-flat-lay-modern-122458198.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3 style=" font-size:44px;   color: rgb(3, 3, 3);">Document Summarizer</h3>
+          <h5  style=" font-size:20px;   color: rgb(3, 3, 3);">Summarizes Documents and converts into plain form</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://previews.123rf.com/images/wrightstudio/wrightstudio1904/wrightstudio190400082/119977525-nlp-natural-language-processing-cognitive-computing-technology-concept-on-virtual-screen-.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3 style=" font-size:44px;   color: rgb(253, 253, 253);">Document Summarizer</h3>
+          <h5  style=" font-size:20px;   color: rgb(255, 255, 255);">Summarizes Documents and converts into plain form</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://previews.123rf.com/images/jirsak/jirsak1503/jirsak150300025/37393619-find-keywords-concept-marketing-specialist-looking-for-keywords-concept-with-magnifying-glass-.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3 style=" font-size:44px;   color: rgb(2, 2, 2);">Document Summarizer</h3>
+          <h5  style=" font-size:20px;   color: rgb(8, 8, 8);">Summarizes Documents and converts into plain form</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://previews.123rf.com/images/maxxyustas/maxxyustas1512/maxxyustas151200004/49994251-database-or-archive-concept-data-storage-laptop-and-file-cabinet-with-ring-binders-3d.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3 style=" font-size:44px;   color: rgb(253, 252, 252);">Document Summarizer</h3>
+          <h5  style=" font-size:20px;   color: rgb(252, 250, 250);">Summarizes Documents and converts into plain form</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+
+<!--Slider End -->
+ <!-- Start of Main Section -->
+ <section class="section section-solutions-about grey lighten-3 ">
+ <div class="container">
+    <div class="section">  
+        
+      <!--   Icon Section   --> 
+      <div class="row">
+        <div class="input-field col s12 m10">
+
+         
+            <div class="icon-block">
+
+                <h2 class="center brown-text"><i class="material-icons">chrome_reader_mode</i></h2>
+
+                <h6 style="font-size: 22px;">Paste Your Text:</h6>
+
+               
+                <form method="POST" action="/text_matcher">
+
+                   <textarea name="rawtext1" cols="3" rows="5" class="form-control" required="true" placeholder="Enter Text Here"></textarea>
+                    <br/>
+                    <br/>
+                   <button class="btn btn-small waves-effect waves-light light-blue lighten-1" type="reset">Clear</button>
+
+                    <br/>
+                    <br/>
+                    <h2 class="center brown-text"><i class="material-icons">chrome_reader_mode</i></h2>
+                   <textarea name="rawtext2" cols="3" rows="5" class="form-control" required="true" placeholder="Enter Text2 Here "></textarea>
+                    <br/>
+                    <br/>   
+
+                   <button class="btn btn-small waves-effect waves-light light-blue lighten-1" type="reset">Clear</button>
+                    <br/>
+                    <br/>
+                   <button class="btn btn-small waves-effect waves-light purple lighten-1" type="submit">Match Text</button>
+                
+                </form>  
+             
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+
+              <h6 style="font-size: 22px;">Upload Files as Alternative:</h6>
+              <br>
+
+              <section class="section section-solutions-about grey lighten-1">
+
+                 <!-- upload start -->
+                <form method="POST" action="{{ url_for('upload_textmatcher')}}" enctype=multipart/form-data>
+                  <div class="main-section" >
+                      <h5>Upload your File1</h5>
+                      <input type="file" name="txt_data1" class="file-upload" required="true" >
+
+                      <h5>Upload your File2</h5>
+                      <input type="file" name="txt_data2" class="file-upload" required="true" >
+
+
+                  </div>
+          
+                   <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+              </form>
+
+            </section>
+
+                  <!-- upload end -->
+
+            </div>
+        </div> 
+      </div> 
+    </div>
+ </div>
+ </section>
+
+ <!-- Result Display-->
+ <section class="section section-solutions-about grey lighten-1">
+  <div class="container white-text">
+  
+  <div class="row"> 
+   <div class="col s12 m6"> 
+    <div class="icon-block">
+      <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+      <h5 class="center">Matching Information</h5> 
+      <div class="alert alert-info" role="alert">
+      <p>Total Match: <span style="color:#0c0c0c;">{{ info }}  </span></p>
+      </div>
+
+      <div class="alert alert-info" role="alert">
+      <p> Matching Percentage: <span style="color:#19191a;">{{ percent }} % </span></p>
+      </div>
+    </div>  
+  </div>
+  </div>
+   </div>
+ </section>
+
+
+    <footer class="page-footer grey darken-4">
+        <div class="container" id="aboutapp">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">About Text Matcher App</h5>
+              <p class="grey-text text-lighten-4">Using Matchine Learning Algorithm.</p>
+    
+    
+            </div>
+          
+       <div class="col l3 s12">
+              <h5 class="white-text">Connect With Me</h5>
+              <ul>
+                <a href="https://facebook.com/jcharistech" target="_blank" class="white-text">
+                <i class="fab fa-facebook fa-4x"></i>
+              </a>
+              <a href="https://gh.linkedin.com/in/jesiel-emmanuel-agbemabiase-6935b690" target="_blank" class="white-text">
+                <i class="fab fa-linkedin fa-4x"></i>
+              </a>
+              <a href="https://www.youtube.com/channel/UC2wMHF4HBkTMGLsvZAIWzRg" target="_blank" class="white-text">
+                <i class="fab fa-youtube-square fa-4x"></i>
+              </a>
+               <a href="https://github.com/Jcharis/" target="_blank" class="white-text">
+                <i class="fab fa-github-square fa-4x"></i>
+              </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          Made by <a class="white-text text-lighten-3" href="https://jcharistech.wordpress.com">Made by Tushar and friendsds</a><br/>
+          <a class="white-text text-lighten-3" href="https://jcharistech.wordpress.com"> CopyRight prohibited! All rights reserved!</a>
+          </div>
+        </div>
+      </footer>
+      <!--  Scripts-->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="static/js/materialize.js"></script>
+      <script src="static/js/init.js"></script>
+      
+        <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"></script>
+
+<script src="{{ url_for('static', filename='js/main.js')}}"></script>
+<script type="text/javascript">
+	$('.file_upload').file_upload();
+</script>
+
+
+
+
+
+
+    <!-- Jesse JCharis -->
+
+
+</body>
+
+</html>
